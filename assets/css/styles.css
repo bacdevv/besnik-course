@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--primary-color: #1ebfc1;
+	--black-heading: #0d1111;
+	--gray-desc: #9da6a5;
+}
+
 html {
 	font-size: 62.5%;
 	font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
@@ -15,3 +21,74 @@ body {
 }
 
 /* Common */
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1170px;
+	max-width: calc(100% - 48px);
+	margin: 0 auto;
+}
+
+/* Header */
+.header {
+	background: #fff;
+	z-index: 1;
+}
+
+.header.fixed {
+	position: sticky;
+	top: -36px;
+}
+
+.header-top {
+	padding: 52px 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar__list {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__link {
+	padding: 4px 20px;
+	color: #2f3a3b;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.navbar__link:hover {
+	font-weight: 500;
+}
+
+.action__signin,
+.action__signup-btn {
+	color: #494949;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.action__signup-btn {
+	--height: 48px;
+	line-height: var(--height);
+
+	color: var(--primary-color);
+	margin-left: 24px;
+	padding: 0 8px;
+	min-width: 108px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #1ebfc1;
+	display: inline-block;
+}
+
+.action__signup-btn:hover {
+	color: #fff;
+	background: var(--primary-color);
+	transition: all 0.2s;
+}
