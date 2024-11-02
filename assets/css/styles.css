@@ -74,8 +74,14 @@ a {
 	line-height: 1.6;
 }
 
-/* Header */
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line-clamp, 1);
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
 
+/* Header */
 .header.fixed {
 	position: sticky;
 	top: -36px;
@@ -359,4 +365,132 @@ a {
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.68; /* 168.75% */
+}
+
+/* Courses */
+.course {
+	padding: 130px 0;
+}
+
+.course__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.course__desc {
+	width: 525px;
+}
+
+.course__link {
+	color: var(--primary-color);
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.course__list {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0 47px;
+}
+
+.course-item {
+	position: relative;
+}
+
+.course-item__img {
+	width: 100%;
+	height: 393px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.course-item__body {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 322px;
+	padding: 18px;
+	min-width: 325px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course-item__heading {
+	color: var(--black-heading);
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+.course-item__info,
+.course-item__cost,
+.course-item__desc {
+	color: var(--gray-desc);
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.course-item__cost strong {
+	color: var(--black-heading);
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.course-item__desc {
+	margin-top: 16px;
+	line-height: 1.5;
+}
+
+.course-item__row {
+	display: flex;
+	margin-top: 18px;
+	gap: 0 26px;
+}
+
+.course-item__info {
+	position: relative;
+	padding-left: 16px;
+}
+
+.course-item__info::before {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: var(--primary-color);
+	border-radius: 50%;
+}
+
+/* Achievement */
+.achievement {
+	margin-top: 165px;
+	padding: 100px 0;
+}
+
+.achievement__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0 202px;
+	text-align: center;
+}
+
+.achievement__quantity {
+	color: var(--black-heading);
+	font-size: 6.2rem;
+	font-weight: 700;
+}
+
+.achievement__desc {
+	margin-top: 12px;
+	color: var(--gray-desc-l);
+	font-size: 1.8rem;
+	font-weight: 400;
 }
