@@ -494,3 +494,111 @@ a {
 	font-size: 1.8rem;
 	font-weight: 400;
 }
+
+/* People */
+.people {
+	margin-top: 34px;
+	padding: 130px 0;
+}
+
+.people__inner {
+	display: flex;
+	align-items: center;
+	gap: 0 72px;
+}
+
+.people__quote-block {
+	width: 36%;
+}
+
+.people__quote {
+	margin-top: 27px;
+	color: #5d6564;
+	font-size: 3.2rem;
+	font-weight: 400;
+	line-height: 1.5; /* 150% */
+}
+
+.people__author {
+	margin-top: 33px;
+	color: var(--gray-desc);
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.people__name {
+	color: #070707;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.people__cta {
+	margin-top: 52px;
+	display: flex;
+	gap: 0 30px;
+}
+
+.people__cta-btn {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: var(--primary-color);
+}
+
+.people__cta-btn:hover {
+	background: transparent;
+	color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	cursor: pointer;
+}
+
+.people__quote-avatar {
+	flex-grow: 1;
+	min-height: 481px;
+	position: relative;
+}
+
+.people__avatar {
+	position: absolute;
+	border-radius: 50%;
+}
+
+.people__avatar:first-child {
+	top: 107px;
+	right: 117px;
+	background: #ff8282;
+}
+
+.people__avatar:nth-child(2) {
+	left: 144px;
+	background: #1ebfc1;
+}
+
+.people__avatar:nth-child(3) {
+	background: #bf83ff;
+	right: 0;
+}
+
+.people__avatar:nth-child(4) {
+	background: #b1dfdc;
+	bottom: 29px;
+	right: 32px;
+}
+
+.people__avatar:nth-child(5) {
+	background: #ff947a;
+	left: 212px;
+	bottom: 0;
+}
+
+.people__avatar:last-child {
+	background: #ffc147;
+	bottom: 145px;
+	left: 0;
+}
